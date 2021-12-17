@@ -40,7 +40,6 @@ const CurrencyConverter: React.FC = () => {
         error: false,
         errorMsg: undefined
       })
-      debugger
       if(!isNaN(amount)){
         dispatch(convertCurrency( amount, currency.finalCurrencyName) )
       }
