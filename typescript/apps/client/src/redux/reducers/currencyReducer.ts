@@ -22,7 +22,6 @@ const CurrencyReducer = (state = INITIAL_STATE, action: Action): CurrencyGlobal 
     case ACTIONS.FETCH_CONVERSION_RATE:
       return { ...state, conversionRate: action.payload as CurrencyGlobalStateType }
     case ACTIONS.CONVERTED_CURRENCY:
-      debugger
       const { sourceAmount, finalCurrency } = action.payload as ConvertedCurrencyType
       const { conversionRate: { quotes } } = state
 
